@@ -10,7 +10,7 @@ nunjucks.configure("./src/views", {
 });
 
 //settings-----
-app.set("port", 80);
+app.set("port", 8080);
 app.set("view engine", "njk");
 
 //middelwares----
