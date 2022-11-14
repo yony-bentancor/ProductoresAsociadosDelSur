@@ -3,7 +3,7 @@ const nunjucks = require("nunjucks");
 const app = express();
 const path = require("path");
 const routes = require("./src/routes/index.routes");
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 8080;
 
 nunjucks.configure("./src/views", {
   autoescape: true,
@@ -11,7 +11,7 @@ nunjucks.configure("./src/views", {
 });
 
 //settings-----
-app.set("port", 80);
+app.set("port", 8080);
 app.set("view engine", "njk");
 
 //middelwares----
