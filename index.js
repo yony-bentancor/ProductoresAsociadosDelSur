@@ -11,7 +11,7 @@ nunjucks.configure("./src/views", {
 });
 
 //settings-----
-app.set("port");
+app.set("PORT");
 app.set("view engine", "njk");
 
 //middelwares----
@@ -19,5 +19,5 @@ app.use(routes); //app.use('/static' express.static(path.join(__dirname 'public'
 //D:\node\cv-yonybentancor\node_modules\serve-static\public
 
 app.listen(app.get("port"), () => {
-  console.log(`hola yony estas conectado al puerto ${app.get("port")}`);
+  console.log(`hola yony estas conectado al puerto ${app.get("PORT")}`);
 });
